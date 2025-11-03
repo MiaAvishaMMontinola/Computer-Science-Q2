@@ -1,0 +1,7 @@
+age = int(input("Hi there! Please enter your age:"))
+final = 0
+x = 1
+while x <= age:
+    final += x
+    x += 1
+print("The sum of all numbers from 1 to", age, "is", final)
