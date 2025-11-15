@@ -1,0 +1,14 @@
+students = int(input("Enter number of students:"))
+subjects = int(input("Enter number of subjects:"))
+total_class_average = 0
+for x in range(1, students + 1):
+    print("Student", x)
+    total_score = 0
+    for y in range( 1, subjects + 1):
+        score = float(input(f"Enter score for subject {y}: "))
+        total_score += score
+    average = total_score/subjects
+    print("Average for Student", x, ":", average)
+    total_class_average += average
+f_average = total_class_average/students
+print("Class average:", f_average)
